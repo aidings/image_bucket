@@ -1,14 +1,3 @@
-# image_bucket
-> 图像桶dataset，按照不同的分辨率对图像进行batch处理，主要用于SD的多分辨率训练
-
-## 1.install
-`pip install git+https://github.com/aidings/image_bucket.git`
-
-## 2.example
-1. 下载1.png和samples.jsonl
-2. 运行如下代码
-
-```python
 import json
 import torch
 from typing import List
@@ -81,5 +70,3 @@ if __name__ == '__main__':
 
     for data in dataloader:
         print(data[0].shape, data[1].shape)
-
-```
